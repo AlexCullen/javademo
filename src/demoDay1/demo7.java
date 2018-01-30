@@ -18,8 +18,8 @@ public class demo7 {
         System.out.println("非精确计算: " + result);
 
         //精确浮点数的解决方法
-        BigDecimal bMoney = new BigDecimal("2");
-        BigDecimal bPrice = new BigDecimal("1.12");
+        BigDecimal bMoney = new BigDecimal(2);
+        BigDecimal bPrice = new BigDecimal(1.12);
         BigDecimal bResult = bMoney.add(bPrice);
         bResult = bMoney.subtract(bPrice);
         System.out.println("精确计算: " + bResult);
