@@ -18,15 +18,15 @@ public class Demo3 {
         //选择最大的
         for(int i = 0; i<arr.length; i++){
             int max = arr[0];
-            for(int j = 0; j<arr.length; j++){
+            for(int j = 0; j<arr.length-i; j++){
                 if(max < arr[j]){
                     max = arr[j];
-                    arr[j] = arr[i];
-                    arr[i] = max;
+                    arr[j] = arr[0];
+                    arr[0] = max;
                 }
             }
-            arr[i] = arr[arr.length-1];
-            arr[arr.length-1] = max;
+            arr[0] = arr[arr.length-i-1];
+            arr[arr.length-i-1] = max;
         }
 
         for(int i = 0; i< arr.length; i++){
